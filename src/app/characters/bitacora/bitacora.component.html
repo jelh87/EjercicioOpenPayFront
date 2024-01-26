@@ -1,0 +1,24 @@
+<!--
+<p *ngFor="let bitacora of allBitacora | async">
+    {{bitacora | json}}
+</p>
+-->
+
+<div fxFlex fxLayout="column">
+    <div>
+        <mat-card-actions>
+            <button routerLink="/characters" mat-raised-button type="submit" 
+                color="primary">Regresar</button>
+        </mat-card-actions>
+    </div>
+    <div fxLayout="row wrap">
+        <div fxFlex="25" fxFlex.md="33" fxFlex.sm="50" fxFlex.xs="100" fxLayout="column" 
+        *ngFor="let bitacora of allBitacora | async" style="padding: 5px;">
+            <mat-card>
+                    {{bitacora.operacion}}
+                    {{bitacora.servicio}}
+                    {{bitacora.fecha}}
+            </mat-card>
+        </div>
+    </div>
+</div>

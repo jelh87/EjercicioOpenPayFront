@@ -24,7 +24,11 @@ export class CharactersComponent implements OnInit {
   }
 
   getCharacter(id:string) {
-    this.router.navigate(['/characters/character/',id]);
+    this.router.navigate(['/characters/character/',id]); 
+  }
+
+  getBitacora() {
+    this.router.navigate(['/characters/bitacora/']);
   }
 
 }

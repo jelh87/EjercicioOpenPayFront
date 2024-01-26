@@ -2,7 +2,7 @@
 <p *ngFor="let character of allCharacters | async">
     {{character | json}}
 </p>
--->
+--> 
 <div fxFlex fxLayout="column">
     <div fxLayout="row wrap">
         <div fxFlex="25" fxFlex.md="33" fxFlex.sm="50" fxFlex.xs="100" fxLayout="column" 
@@ -16,9 +16,13 @@
                 </mat-card-title>
                     <mat-card-actions>
                         <button (click)="getCharacter(character.id)" 
-                        mat-raised-button type="submit" color="primary">Detalles</button>
+                            mat-raised-button type="submit" color="primary">Detalles</button>
+                    </mat-card-actions>
+                    <mat-card-actions>
+                        <button (click)="getBitacora()" 
+                            mat-raised-button type="submit" color="primary">Bitacora</button>
                     </mat-card-actions>
             </mat-card>
         </div>
     </div>
-</div>
+</div> 

@@ -19,13 +19,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatDialogModule } from '@angular/material/dialog';
+import { BitacoraComponent } from './characters/bitacora/bitacora.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     CharacterComponent,
-    CharactersComponent
+    CharactersComponent,
+    BitacoraComponent
   ],
   imports: [
     BrowserModule,
