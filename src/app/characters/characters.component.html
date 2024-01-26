@@ -3,7 +3,6 @@
     {{character | json}}
 </p>
 -->
-
 <div fxFlex fxLayout="column">
     <div fxLayout="row wrap">
         <div fxFlex="25" fxFlex.md="33" fxFlex.sm="50" fxFlex.xs="100" fxLayout="column" 
@@ -15,11 +14,10 @@
                 <mat-card-title>
                     {{character.name}}
                 </mat-card-title>
-                <mat-card-footer>
-                    <a href="{{character.urls}}" target="_blank" fxFlex mat-flat-button color="primary">
-                        Detalles
-                    </a>
-                </mat-card-footer>
+                    <mat-card-actions>
+                        <button (click)="getCharacter(character.id)" 
+                        mat-raised-button type="submit" color="primary">Detalles</button>
+                    </mat-card-actions>
             </mat-card>
         </div>
     </div>

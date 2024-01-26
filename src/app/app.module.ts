@@ -16,8 +16,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { CharacterComponent } from './characters/character/character.component';
 import { CharactersComponent } from './characters/characters.component';
 import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import {MatDialogModule} from '@angular/material/dialog';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatCardModule,
     MatFormFieldModule,
     HttpClientModule,
+    RouterModule,
     FlexLayoutModule,
     MatDialogModule
   ],

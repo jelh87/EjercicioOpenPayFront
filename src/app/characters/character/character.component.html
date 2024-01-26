@@ -1,1 +1,19 @@
-<p>character works!</p>
+
+<div fxFlex fxLayout="column">
+    <div fxLayout="row wrap">
+        <mat-card>
+            <p> <mat-card-title>Nombre:</mat-card-title> 
+                <mat-card-subtitle>{{character.name}}</mat-card-subtitle></p>
+            <p> <mat-card-title>Descripci&oacute;n:</mat-card-title> 
+                <mat-card-subtitle>{{character.description}}</mat-card-subtitle></p>   
+            <mat-card-actions>
+                <button routerLink="/characters" mat-raised-button type="submit" 
+                    color="primary">Regresar</button>
+            </mat-card-actions>
+            <div>
+                <img src="{{character.thumbnailPath}}.{{character.thumbnailExtension}}" 
+                alt="..." class="img-thumbnail">
+            </div>
+        </mat-card>
+    </div>
+</div>
